@@ -1,0 +1,23 @@
+from: git-dev-1.0
+spring:
+  cloud:
+    bus:
+      trace:
+        enabled: true
+  sleuth:
+    sampler:
+      percentage: 0.5
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: springcloud
+    password: banggood
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    preferIpAddress: true
+management:
+  security:
+    enabled: false

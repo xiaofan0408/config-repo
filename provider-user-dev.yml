@@ -1,0 +1,21 @@
+spring:
+  sleuth:
+    log:
+      json:
+        enabled: true
+    sampler:
+      percentage: 0.5
+  datasource:
+    url: jdbc:mysql://localhost:3306/study
+    username: root
+    password: banggood
+    driver-class-name: com.mysql.jdbc.Driver
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+  instance:
+    preferIpAddress: true
+management:
+  security:
+    enabled: false

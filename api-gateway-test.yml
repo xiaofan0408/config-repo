@@ -1,0 +1,23 @@
+zuul:
+  routes:
+    robbin:
+      path: /robbin/**
+      service-id: consumer-user
+    feign:
+      path: /feign/**
+      service-id: consumer-feign
+eureka:
+  instance:
+    hostname: api-gateway
+    preferIpAddress: true
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.99.100:8761/eureka/
+management:
+  security:
+    enabled: false
+security:
+   user:
+    name: test
+    password: test
+    role: -USER
