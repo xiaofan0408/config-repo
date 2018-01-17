@@ -1,0 +1,23 @@
+eureka:
+  client:
+    service-url:
+      defaultZone: http://192.168.99.100:8761/eureka/
+  instance:
+      preferIpAddress: true
+management:
+  security:
+    enabled: false
+spring:
+  cloud:
+    bus:
+      trace:
+        enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: springcloud
+    password: banggood
+from: git-dev-2.0
+study:
+  id: 1111
+  name: test
