@@ -3,9 +3,11 @@ zuul:
     robbin:
       path: /robbin/**
       service-id: consumer-user
+      listOfServers: http://127.0.0.1:8761
     feign:
       path: /feign/**
       service-id: consumer-feign
+      listOfServers: http://127.0.0.1:8761
 eureka:
   instance:
     hostname: api-gateway
@@ -14,3 +16,6 @@ security:
     name: test
     password: test
     role: -USER
+ribbon:
+  eureka:
+    enabled: false
