@@ -1,7 +1,7 @@
 zuul:
   routes:
     robbin:
-      path: /robbin/**
+      path: /ribbon/**
       service-id: consumer-user
     feign:
       path: /feign/**
